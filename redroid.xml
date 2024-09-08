@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="redroid" fetch="." revision="redroid-13.0.0_r74" />
+    <remote name="redroid" fetch="https://github.com/remote-android" revision="redroid-13.0.0_r74" />
 
     <!-- remove unused projects -->
     <remove-project name="platform/prebuilts/bazel/darwin-x86_64" />
@@ -42,5 +42,6 @@
     <project path="vendor/redroid" name="vendor_redroid" groups="redroid" remote="redroid" revision="master" />
 
     <include name="external.xml" />
+    <include name="cuttlefish.xml" />
 
 </manifest>
